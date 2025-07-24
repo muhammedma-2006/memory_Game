@@ -6,13 +6,22 @@ body{
 .main{
     text-align: center;
 }
-.text-8x1{
+.text-8xl{
     font-size: 6rem;
     line-height: 1;
 }
 .mb-6{
     margin-bottom: 1.6rem;
 }
+@keyframes pulse{
+    50%{
+        opacity: .5;
+    }
+}
 .animate-pulse{
     animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;
+}
+
+h1{
+    font-size: 4rem;
 }
