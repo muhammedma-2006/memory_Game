@@ -1,6 +1,8 @@
 import {useState} from "react";
-const fruits=["🍎","🍌","🍇","🍉","🍓","🍒","🥝","🍍"];
-function easy() {
+const fruits=["🍎","🍌","🍇","🍉","🍓","🍒","🥝","🍍"
+,"🥭","🍑","🍐","🍊","🍋","🍏","🥥","🍈","🍔","🍕","🌭","🍿","🥨","🧀"
+,"🍗","🍖","🍤","🍣","🍜","🍩","🍪","🎂","🍰","🧁"];
+function Hard() {
     
 
     const doubleFruits=[...fruits,...fruits];
@@ -15,13 +17,9 @@ function easy() {
     return(<>
     <div className="main">
         <div className="header">
-            <div className="text-8xl mb-6 animate-pulse">😊</div>
-            <h1>Easy Level</h1>
-        </div>
-        <div className="game-panel">
-            <div className="moves"></div>
-            <div className="time"></div>
-            <input onClick={restart()} type="button" value="Restart" />
+            <div className="text-8xl mb-6 animate-pulse">🤯</div>
+            <h1>Hard Level</h1>
+            <p>64 Cards - Match all pairs to win!</p>
         </div>
         <div className="game-board">
                 <div style={style.container}>
@@ -36,7 +34,7 @@ function easy() {
 const style ={
     container:{
         display:"grid",
-        gridTemplateColumns:"repeat(4,100px)",
+        gridTemplateColumns:"repeat(8,100px)",
         gap: "10px",
         justifyContent: "center",
     },
@@ -49,8 +47,8 @@ const style ={
         borderRadius: "12px",
         cursor: "pointer",
         boxShadow: "0 2px 5px rgba(0,0,0,0.2)",
-         backgroundColor: "rgb(240, 240, 240)",
+        backgroundColor: "rgb(240, 240, 240)",
     }
 }
   
-export default easy
+export default Hard

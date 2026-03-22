@@ -1,6 +1,7 @@
 import {useState} from "react";
-const fruits=["🍎","🍌","🍇","🍉","🍓","🍒","🥝","🍍"];
-function easy() {
+const fruits=["🍎","🍌","🍇","🍉","🍓","🍒","🥝","🍍",
+"🥭","🍑","🍐","🍊","🍋","🍏","🥥","🍈","🍔","🍕"];
+function medium() {
     
 
     const doubleFruits=[...fruits,...fruits];
@@ -15,13 +16,9 @@ function easy() {
     return(<>
     <div className="main">
         <div className="header">
-            <div className="text-8xl mb-6 animate-pulse">😊</div>
-            <h1>Easy Level</h1>
-        </div>
-        <div className="game-panel">
-            <div className="moves"></div>
-            <div className="time"></div>
-            <input onClick={restart()} type="button" value="Restart" />
+            <div className="text-8xl mb-6 animate-pulse">🤔</div>
+            <h1>medium Level</h1>
+            <p>36 Cards - Match all pairs to win!</p>
         </div>
         <div className="game-board">
                 <div style={style.container}>
@@ -36,7 +33,7 @@ function easy() {
 const style ={
     container:{
         display:"grid",
-        gridTemplateColumns:"repeat(4,100px)",
+        gridTemplateColumns:"repeat(6,100px)",
         gap: "10px",
         justifyContent: "center",
     },
@@ -53,4 +50,4 @@ const style ={
     }
 }
   
-export default easy
+export default medium
